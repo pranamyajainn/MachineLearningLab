@@ -12,7 +12,7 @@ Q1. Write a program to implement Linear Regression Algorithm using the dataset b
 7. Apply regression model 
 8. Predict the accuracy
 
-	•	
+
 Q2. Write a program to Demonstrate Gradient Descent algorithm using the dataset California housing price prediction and perform the following operations on dataset 
 1. Import dataset 
 2. Display first 5 rows 
@@ -22,7 +22,7 @@ Q2. Write a program to Demonstrate Gradient Descent algorithm using the dataset 
 6. Obtain covariance and correlation values
 7. Predict the accuracy
 CO1
-	•	
+		
 Q3. Write a program to implement Logistic Regression considering iris dataset And perform the following operations on dataset 
 1. Import dataset 
 2. Display first 5 rows 
@@ -34,17 +34,17 @@ Q3. Write a program to implement Logistic Regression considering iris dataset An
 8. Apply regression model 
 9. Predict the accuracy.
 CO1
-	•	
+		
 Q4. Write a program to demonstrate the FIND-S algorithm for finding the most specific hypothesis based on a given set of training data samples. Read the training data from a enjoysport.CSV file.
 CO2
-	•	
+	
 Q5. Write a program to demonstrate the Candidate-Elimination algorithm to output a description of the set of all hypotheses consistent with the training examples. Read the training data from a playtennis.CSV file.
 CO2
-	•	
+		
 Q6. Write a program to Demonstrate the working of the Decision Tree Based ID3 Algorithm. 
 Use an playtennis.csv data set for building the decision tree and apply this knowledge to classify a new sample.
 CO2
-	•	
+		
 Q7. Write a program to implement the Naïve Bayesian Classifier to classify the following English text.
 I love this sandwich, pos 
 This is an amazing place,pos 
@@ -66,17 +66,17 @@ We will have good fun tomorrow, pos
 I went to my enemys house today,neg
 Predict 1. Total Instances of Dataset 2. Accuracy 3. Recall 4. Precision 5. Confusion Matrix
 
-	•	
+		
 Q8. Write a program to Demonstrate for the following data, which specify classifications for nine combinations of VAR1 and VAR2 predict a classification for a case where VAR1=0.906 and VAR2=0.606, using the result of k-means clustering with 3 means (i.e., 3centroids)
 CO3
-	•	
+	
 Q9. Write a program to Demonstrate the working of the KNN. Use an IRIS  data set 
 	•	Load the Iris dataset and split it into training and testing sets
 	•	Train the classifier using the training data
 	•	Prediction on the test data 
 	•	Evaluate the accuracy of the model
 CO3
-	•	
+		
 Q10. Write a program to Demonstrate RANDOM FOREST using the dataset California housing price prediction and perform the following operations on dataset 
 1. Import dataset 
 2. Display first 5 rows 
@@ -88,10 +88,10 @@ Q10. Write a program to Demonstrate RANDOM FOREST using the dataset California h
 8. Apply regression model 
 9. Predict the accuracy.
 CO3
-	•	
+   
 Q11. Write a program to Implement the non-parametric Locally Weighted Regression algorithm in order to fit data points. Select appropriate data set for your experiment and draw graphs
 CO3
-	•	
+		
 Q12. Write a program to Demonstrate the working of the Support Vector Machine. 
 	•	Use an iris.csv data set  
 	•	Split the data into training and testing sets.
