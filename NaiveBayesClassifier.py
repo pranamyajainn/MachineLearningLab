@@ -1,9 +1,9 @@
+#naive bayes
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-# Dataset
 data = [
     ("I love this sandwich", "pos"),
     ("This is an amazing place", "pos"),
@@ -24,35 +24,14 @@ data = [
     ("We will have good fun tomorrow", "pos"),
     ("I went to my enemys house today", "neg"),
 ]
-
-# Splitting data into features (X) and labels (y)
-X, y = zip(*data)
-
-# Splitting dataset into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
-# Vectorizing the text data
+X,y =zip(*data)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2, random_state=42)
 vectorizer = CountVectorizer()
-X_train_vectorized = vectorizer.fit_transform(X_train)
-X_test_vectorized = vectorizer.transform(X_test)  # Ensure transformation is applied to X_test
-
-# Training the Naive Bayes classifier
-classifier = MultinomialNB()
-classifier.fit(X_train_vectorized, y_train)
-
-# Making predictions
-y_pred = classifier.predict(X_test_vectorized)  # Use transformed test data here
-
-# Evaluating the classifier
-accuracy = accuracy_score(y_test, y_pred)
-precision = precision_score(y_test, y_pred, pos_label="pos")
-recall = recall_score(y_test, y_pred, pos_label="pos")
-conf_matrix = confusion_matrix(y_test, y_pred, labels=["pos", "neg"])
-
-# Results
-print("Total Instances in Dataset:", len(data))
-print("Accuracy:", accuracy)
-print("Precision:", precision)
-print("Recall:", recall)
-print("Confusion Matrix:")
-print(conf_matrix)
+X_train_count = vectorizer.fit_transform(X_train)
+X_test_count = vectorizer.transform(X_test)
+model= MultinomialNB()
+model.fit(X_train_count,y_train)
+y_pred = model.predict(X_test_count)
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Classification Report:\n", classification_report(y_test, y_pred))
+print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
